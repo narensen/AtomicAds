@@ -12,8 +12,6 @@ The core of the system is a multi-step workflow orchestrated by LangGraph, with 
 
 The application's logic is orchestrated as a directed acyclic graph (DAG) using LangGraph. Each node in the graph represents a distinct processing step, passing its output to the next node in a well-defined state object.
 
-### Visual Representation (Mermaid Syntax)
-
 ```mermaid
 graph TD
     A[Start] --> B(context_summarizer)
@@ -30,4 +28,5 @@ graph TD
     style E fill:#f9f,stroke:#333,stroke-width:2px
     style F fill:#f9f,stroke:#333,stroke-width:2px
     style G fill:#9cf,stroke:#333,stroke-width:2px
+
 
